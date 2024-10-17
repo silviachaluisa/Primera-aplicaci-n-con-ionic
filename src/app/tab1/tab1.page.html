@@ -24,6 +24,7 @@
             Me gusta llevar cada nuevo concepto adquirido a la práctica mediante creaciones de mini proyectos
           </ion-label>
         </ion-card-header>
+
         <div class="flex flex-col justify-center items-center col-span-1">
           <img
             src="assets/profiles/Alejo.jpg"
@@ -54,6 +55,7 @@
         </ion-list>
       </ion-card-content>
     </ion-card>
+
     <ion-card class="bg-gray-800 p-3 border-2 border-gray-800 rounded-lg">
       <ion-card-header>
         <ion-card-title>Estudios</ion-card-title>
@@ -71,6 +73,7 @@
         </ion-list>
       </ion-card-content>
     </ion-card>
+
     <ion-card class="bg-gray-800 p-3 border-2 border-gray-800 rounded-lg col-span-full">
       <ion-card-header>
         <ion-card-title>Skills</ion-card-title>
@@ -108,13 +111,17 @@
             <ion-label>{{project.desc}}</ion-label>
           </ion-item>
           <ion-item class="flex flex-row">
+            <ion-label>Versión actual:</ion-label>
+            <ion-label>{{project.version}}</ion-label>
+          </ion-item>
+          <ion-item class="flex flex-row">
             <ion-label>Fecha:</ion-label>
             <ion-label>{{project.dateC}}</ion-label>
           </ion-item>
           <ion-item class="flex flex-row" *ngIf="project.link !== undefined">
-            <ion-label>Link:</ion-label>
+            <ion-label>Repositorio:</ion-label>
             <ion-label>
-              <a [href]="project.link" target="_blank" class="text-blue-400 hover:text-blue-500">{{project.link}}</a>
+              <a [href]="project.link" target="_blank" class="text-blue-400 hover:text-blue-500">GitHub</a>
             </ion-label>
           </ion-item>
         </ion-list>
