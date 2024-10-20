@@ -43,11 +43,11 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-3">
     <div class="flex flex-row justify-center col-span-full">
-      <ion-icon name="information-circle" class="text-2xl p-2"></ion-icon>
+      <ion-icon name="document" class="text-2xl p-2"></ion-icon>
       <ion-label class="text-white text-center text-lg p-2 m-0">Informacion</ion-label>
     </div>
     <ion-card class="bg-green-900 p-3 border-2 border-green-500 rounded-lg shadow-2xl shadow-green-500/50">
-      <ion-card-header class="flex flex-row justify-start">
+      <ion-card-header class="flex flex-row justify-center">
         <ion-icon name="person" class="text-2xl p-2"></ion-icon>
         <ion-card-title class="p-2 m-0">Experiencia</ion-card-title>
       </ion-card-header>
@@ -62,7 +62,7 @@
     </ion-card>
 
     <ion-card class="bg-green-900 p-3 border-2 border-green-500 rounded-lg shadow-2xl shadow-green-500/50">
-      <ion-card-header class="flex flex-row justify-start">
+      <ion-card-header class="flex flex-row justify-center">
         <ion-icon name="school" class="text-2xl p-2"></ion-icon>
         <ion-card-title class="p-2 m-0">Estudios</ion-card-title>
       </ion-card-header>
@@ -81,11 +81,26 @@
     </ion-card>
 
     <ion-card class="bg-cyan-900 p-3 border-2 border-cyan-500 rounded-lg col-span-full shadow-2xl shadow-cyan-500/50">
-      <ion-card-header class="flex flex-row justify-start">
+      <ion-card-header class="flex flex-row justify-center">
         <ion-icon name="construct" class="text-2xl p-2"></ion-icon>
         <ion-card-title class="p-2 m-0">Habilidades</ion-card-title>
       </ion-card-header>
       <ion-card-content>
+        <div class="flex flex-row justify-start">
+          <ion-icon name="language" class="text-2xl p-2"></ion-icon>
+          <ion-label class="text-white text-lg p-2 m-0">Idiomas</ion-label>
+        </div>
+        <ion-list class="text-white border-2 border-gray-800 rounded-lg">
+          <ion-item>
+            <ion-label class="text-center">Idioma ingles</ion-label>
+            <ion-label class="text-center">Intermedio</ion-label>
+          </ion-item>
+        </ion-list>
+        
+        <div class="flex flex-row justify-start">
+          <ion-icon name="add-circle" class="text-2xl p-2"></ion-icon>
+          <ion-label class="text-white text-lg p-2 m-0">Adicionales</ion-label>
+        </div>
         <ion-list class="text-white border-2 border-gray-800 rounded-lg">
           <ion-item *ngFor="let skill of skills">
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 w-full">
@@ -107,8 +122,8 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 p-3">
     <ion-card class="bg-green-900 p-3 border-2 border-green-500 rounded-lg shadow-2xl shadow-green-500/50">
-      <ion-card-header class="flex flex-row">
-        <ion-icon name="person" class="text-2xl p-2"></ion-icon>
+      <ion-card-header class="flex flex-row justify-center">
+        <ion-icon name="chatbubble-ellipses-outline" class="text-2xl p-2"></ion-icon>
         <ion-card-title class="p-2 m-0">Contacto</ion-card-title>
       </ion-card-header>
       <ion-card-content>
@@ -123,12 +138,12 @@
     </ion-card>
 
     <ion-card class="bg-green-900 p-3 border-2 border-green-500 rounded-lg shadow-2xl shadow-green-500/50">
-      <ion-card-header class="flex flex-row">
-        <ion-icon name="person" class="text-2xl p-2"></ion-icon>
+      <ion-card-header class="flex flex-row justify-center">
+        <ion-icon name="hourglass-outline" class="text-2xl p-2"></ion-icon>
         <ion-card-title class="p-2 m-0">Pasatiempos</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <ion-list class="text-white text-center">
+        <ion-list class="text-white border-2 border-gray-800 rounded-lg">
           <ion-item>
             <ion-label>Escuchar musica</ion-label>
           </ion-item>
