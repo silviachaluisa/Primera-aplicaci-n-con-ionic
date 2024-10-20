@@ -24,6 +24,13 @@ export class Tab1Page {
     { name:'Main App (Beta)', version:'0.0.7 (Dev)', desc:'Aplicación GUI de escritorio (en desarrollo) para realizar distintas acciones con conjuntos de datos, la aplicación surgió de una idea de juntar la mayor parte de contenidos vistos en la asignatura de 3° semestre Analisis de Datos de la carrera de Desarrollo de Software de la EPN, el nombre de la aplicación puede cambiar durante la fase de desarrollo', link:undefined, dateC:"2023-11-15"},
   ]
 
+  // Lista para contacto
+  contacts = [
+    { name: 'Email', value: 'marcelo.pinzon@epn.edu.ec', icon: 'mail' },
+    { name: 'Teléfono', value: '+593 99 847 2631', icon: 'call' },
+    { name: 'Dirección', value: 'Quito, Ecuador', icon: 'location' }
+  ];
+
   constructor() {}
 
   // Función para obtener el color de la barra de progreso
