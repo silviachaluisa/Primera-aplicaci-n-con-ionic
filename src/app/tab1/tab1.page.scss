@@ -1,0 +1,22 @@
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    justify-items: center;  /* Centra los elementos en el eje horizontal */
+    align-items: center;    /* Centra los elementos en el eje vertical */
+  }
+  
+  .button-grid div {
+    display: flex;          
+    flex-direction: column-reverse; 
+    align-items: center;    
+  }
+  
+  ion-button {
+    width: 70px;   /* Ancho fijo para todos los botones */
+    height: 70px;  /* Alto fijo para todos los botones */
+    --padding-top: 0;  /* Elimina el padding superior */
+    --padding-bottom: 0; /* Elimina el padding inferior */
+  }
+  

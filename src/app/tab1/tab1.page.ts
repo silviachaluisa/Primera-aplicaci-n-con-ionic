@@ -43,4 +43,51 @@ export class Tab1Page {
       return 'success';
     }
   }
+
+  result: string = '';
+  operation: string | null = null;
+  previousValue: number | null = null;
+
+  appendToResult(value: string) {
+    this.result += value;
+  }
+
+  setOperation(op: string) {
+    if (this.result) {
+      this.previousValue = parseFloat(this.result);
+      this.operation = op;
+      this.result = '';
+    }
+  }
+
+  calculateResult() {
+    if (this.previousValue !== null && this.operation && this.result) {
+      const currentValue = parseFloat(this.result);
+      switch (this.operation) {
+        case '+':
+          this.result = (this.previousValue + currentValue).toString();
+          break;
+        case '-':
+          this.result = (this.previousValue - currentValue).toString();
+          break;
+        case '*':
+          this.result = (this.previousValue * currentValue).toString();
+          break;
+        case '/':
+          this.result = (this.previousValue / currentValue).toString();
+          break;
+      }
+      this.previousValue = null;
+      this.operation = null;
+    }
+  }
+
+  clearResult() {
+    this.result = '';
+    this.previousValue = null;
+    this.operation = null;
+  }
+
+
+  
 }
